@@ -1,0 +1,16 @@
+.nav-bar-text:hover {
+  color: #9f7a7a;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.nav-bar-text {
+  color: #333333;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s, color 0.3s;
+}

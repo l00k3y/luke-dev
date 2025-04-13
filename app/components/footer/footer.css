@@ -19,4 +19,9 @@
   background-color: #f4f0ec; /* text-gray-200 */
   color: #333333;
   box-sizing: border-box;
+  text-align: right;
+  .body-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }

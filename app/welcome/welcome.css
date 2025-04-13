@@ -19,6 +19,17 @@
   justify-content: center;
 }
 
+.title-lg {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  @media screen and (max-width: 800px) {
+    font-size: 1.5rem;
+  }
+}
+
 .left-main-div-text {
   font-size: 2rem;
   color: #333333; /* bg-gray-800 */
@@ -61,6 +72,9 @@
     height: 100%;
     border-radius: 4%;
     margin-bottom: 20px;
+    @media screen and (max-width: 800px) {
+      flex: 0.9;
+    }
   }
 }
 

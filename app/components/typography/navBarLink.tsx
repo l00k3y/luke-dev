@@ -1,7 +1,7 @@
 import { Typography } from "@mui/joy";
 import { Link } from "react-router";
 
-import "./navBar.css";
+import "./navBarTypography.css";
 
 export const NavBarLink = ({ path, text }: { path: string; text: string }) => {
   return (
@@ -10,7 +10,7 @@ export const NavBarLink = ({ path, text }: { path: string; text: string }) => {
         level="h4"
         fontSize="lg"
         textColor="#333333"
-        className="navBarText">
+        className="nav-bar-text">
         {text}
       </Typography>
     </Link>
