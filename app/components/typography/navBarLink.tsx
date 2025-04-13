@@ -9,9 +9,8 @@ export const NavBarLink = ({ path, text }: { path: string; text: string }) => {
       <Typography
         level="h4"
         fontSize="lg"
-        textColor="white"
-        className="navBarText"
-        fontFamily={"Inter"}>
+        textColor="#333333"
+        className="navBarText">
         {text}
       </Typography>
     </Link>

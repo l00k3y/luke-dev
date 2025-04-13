@@ -45,9 +45,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <ScrollRestoration />
         <Scripts />
       </body>
-      <footer className="p-4 bg-gray-800 text-white">
-        <Footer />
-      </footer>
+      <Footer />
     </html>
   );
 }

@@ -9,7 +9,7 @@ export const Welcome = () => {
       <div className="main-div">
         <div className="left-main-div">
           <div className="left-main-div-text">
-            <Typography level="h1">Luke Chisnall</Typography>
+            <Typography level="title-lg">Luke Chisnall</Typography>
 
             <Typography level="h3">Software Engineer</Typography>
             <Typography level="h4">Welcome to My Portfolio.</Typography>
