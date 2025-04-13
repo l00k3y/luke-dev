@@ -7,9 +7,22 @@
 
 html,
 body {
+  height: 100%;
+  width: 100%;
   @apply bg-white dark:bg-gray-950;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+}
+
+main {
+  background-color: #ffffff;
+  /* padding: 20px; */
+  height: 84vh;
+  width: 100vw;
+}
+
+footer {
+  height: 8vh;
 }

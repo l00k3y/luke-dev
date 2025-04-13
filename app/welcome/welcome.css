@@ -1,0 +1,68 @@
+.main-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.left-main-div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.left-main-div-text {
+  font-size: 2rem;
+  color: #4b5563; /* bg-gray-800 */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.call-to-action-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  margin-top: 14px;
+  /* padding: 10px; */
+}
+
+.padded-button {
+  padding: 10px 20px;
+  background-color: #4b5563; /* bg-gray-800 */
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #4b5563; /* bg-gray-800 */
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+}
+
+.right-main-div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  align-items: center;
+  justify-content: center;
+
+  .avatar {
+    /* width: %; */
+    height: 100%;
+    border-radius: 4%;
+    margin-bottom: 20px;
+  }
+}

@@ -7,7 +7,7 @@ export const NavBarLink = ({ path, text }: { path: string; text: string }) => {
   return (
     <Link to={path}>
       <Typography
-        level="h2"
+        level="h4"
         fontSize="lg"
         textColor="white"
         className="navBarText"

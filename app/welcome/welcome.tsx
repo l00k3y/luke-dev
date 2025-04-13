@@ -1,14 +1,34 @@
-import logoDark from "./logo-dark.svg";
-import logoLight from "./logo-light.svg";
+import { Button, Typography } from "@mui/joy";
+import avatar from "./avatar.png";
+
+import "./welcome.css";
 
 export const Welcome = () => {
   return (
-    <main className="flex items-center justify-center pt-16 pb-4">
-      <h1 className="text-2xl font-bold">Welcome to Our Application!</h1>
-      <p className="mt-4 text-lg">Explore our features and enjoy your stay!</p>
-      <button className="mt-6 px-4 py-2 bg-blue-500 text-white rounded">
-        Get Started
-      </button>
+    <main>
+      <div className="main-div">
+        <div className="left-main-div">
+          <div className="left-main-div-text">
+            <Typography level="h1">Luke Chisnall</Typography>
+
+            <Typography level="h3">Software Engineer</Typography>
+            <Typography level="h4">Welcome to My Portfolio.</Typography>
+            <Typography level="body-md">
+              Explore my features and enjoy your stay!
+            </Typography>
+          </div>
+
+          <div className="call-to-action-row">
+            <Button className="padded-button">Download Resume</Button>
+            <Button className="padded-button">View Projects</Button>
+            <Button className="padded-button">Contact Me</Button>
+          </div>
+        </div>
+
+        <div className="right-main-div">
+          <img src={avatar} alt="Luke Chisnall's Avatar" className="avatar" />
+        </div>
+      </div>
     </main>
   );
 };
