@@ -6,9 +6,11 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
+import "@fontsource/inter";
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import NavigationBar from "./navigationBar/navigationBar";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -20,6 +22,10 @@ export const links: Route.LinksFunction = () => [
   {
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
+  },
+  {
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css2?family=Inter&display=swap",
   },
 ];
 
@@ -33,10 +39,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+        <NavigationBar />
         {children}
         <ScrollRestoration />
         <Scripts />
       </body>
+      <footer className="p-4 bg-gray-800 text-white">
+        © 2025 Luke Chisnall.dev
+      </footer>
     </html>
   );
 }

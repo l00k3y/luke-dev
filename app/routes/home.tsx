@@ -1,10 +1,12 @@
 import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
+import { RootLayout } from "~/layout/layout";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
+    { title: "Luke C - Dev" },
     { name: "description", content: "Welcome to React Router!" },
+    { name: "keywords", content: "React, Router, JavaScript" },
   ];
 }
 
