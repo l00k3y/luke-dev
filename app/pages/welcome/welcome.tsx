@@ -9,9 +9,21 @@ export const Welcome = () => {
       <div className="main-div">
         <div className="left-main-div">
           <div className="left-main-div-text">
-            <Typography variant="h1">Luke Chisnall</Typography>
+            <Typography
+              variant="h1"
+              sx={{
+                fontSize: { xs: "15vw", sm: "15vw", md: "10vw", lg: "10vw" },
+              }}>
+              Luke Chisnall
+            </Typography>
 
-            <Typography variant="h3">Full Stack Software Engineer</Typography>
+            <Typography
+              variant="h3"
+              sx={{
+                fontSize: { xs: "4vw", sm: "4vw", md: "3vw", lg: "3vw" },
+              }}>
+              Full Stack Software Engineer
+            </Typography>
           </div>
 
           <div className="call-to-action-row">

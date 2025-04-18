@@ -16,6 +16,9 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 }
 
 #left-nav-bar {
@@ -33,8 +36,10 @@
 }
 
 #nav-luke-home {
-  margin-left: auto;
-  margin-right: auto;
+  @media only screen and (max-width: 600px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .row-align-left {
