@@ -12,6 +12,8 @@ import type { Route } from "./+types/root";
 import "./app.css";
 import NavigationBar from "./components/navigationBar/navigationBar";
 import Footer from "./components/footer/footer";
+import { createTheme, ThemeProvider } from "@mui/material";
+import CssBaseline from "@mui/material/CssBaseline";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -30,6 +32,43 @@ export const links: Route.LinksFunction = () => [
   },
 ];
 
+const theme = createTheme({
+  typography: {
+    fontFamily: "Inter",
+  },
+  colorSchemes: {
+    light: {
+      palette: {
+        primary: {
+          main: "#6140D6",
+          dark: "#332dbf",
+          light: "#b4a1eb",
+          contrastText: "#FFFFFF",
+        },
+        secondary: {
+          main: "#b6d640",
+          dark: "#8b9729",
+          light: "#d8eb9d",
+          contrastText: "#000000",
+        },
+      },
+    },
+    dark: {
+      palette: {
+        primary: {
+          main: "#9EBF29",
+          light: "#B1CB53",
+          dark: "#6E851C",
+          contrastText:""
+        },
+        secondary: {
+          main: "#4D5436",
+        },
+      },
+    },
+  },
+});
+
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -39,13 +78,16 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body>
-        <NavigationBar />
-        {children}
+      <ThemeProvider theme={theme}>
+        <CssBaseline enableColorScheme={true} />
         <ScrollRestoration />
-        <Scripts />
-      </body>
-      <Footer />
+        <body>
+          <Scripts />
+          <NavigationBar />
+          {children}
+        </body>
+        <Footer />
+      </ThemeProvider>
     </html>
   );
 }

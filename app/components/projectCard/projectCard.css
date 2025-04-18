@@ -1,0 +1,26 @@
+.row-3-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#project-card-column-1 {
+  flex: 1;
+  border-right: 1px solid #e0e0e0;
+}
+
+#project-card-column-2 {
+  flex: 4;
+  padding: 0 16px;
+  border-left: 1px solid #e0e0e0;
+}
+#project-card-column-3 {
+  flex: 1;
+  border-left: 1px solid #e0e0e0;
+}

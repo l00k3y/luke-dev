@@ -1,12 +1,11 @@
 .nav-bar-text:hover {
-  color: #9f7a7a;
+  /* color: #9f7a7a; */
   text-decoration: underline;
   font-weight: bold;
 }
 
 .nav-bar-text {
   width: auto;
-  color: #333333;
   font-size: 1.25rem;
   font-weight: bold;
   text-decoration: none;

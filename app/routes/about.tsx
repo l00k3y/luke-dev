@@ -13,6 +13,10 @@ export function meta({}: Route.MetaArgs) {
       name: "keywords",
       content: "React, Router, JavaScript, Full Stack Developer",
     },
+    {
+      name: "author",
+      content: "Luke Chisnall",
+    },
   ];
 }
 

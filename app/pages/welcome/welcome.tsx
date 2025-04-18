@@ -1,4 +1,4 @@
-import { Button, Typography } from "@mui/joy";
+import { Button, Typography } from "@mui/material";
 import avatar from "./avatar.png";
 
 import "./welcome.css";
@@ -9,9 +9,9 @@ export const Welcome = () => {
       <div className="main-div">
         <div className="left-main-div">
           <div className="left-main-div-text">
-            <Typography className="title-lg">Luke Chisnall</Typography>
+            <Typography variant="h1">Luke Chisnall</Typography>
 
-            <Typography level="h3">Full Stack Software Engineer</Typography>
+            <Typography variant="h3">Full Stack Software Engineer</Typography>
           </div>
 
           <div className="call-to-action-row">

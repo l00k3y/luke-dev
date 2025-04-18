@@ -7,6 +7,10 @@ export function meta({}: Route.MetaArgs) {
     { title: "Luke C - Dev" },
     { name: "description", content: "Welcome to React Router!" },
     { name: "keywords", content: "React, Router, JavaScript" },
+    {
+      name: "author",
+      content: "Luke Chisnall",
+    },
   ];
 }
 

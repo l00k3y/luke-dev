@@ -1,17 +1,16 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-// import { IconButton, Typography, Divider, ListItem, ListItemButton } from "@mui/joy";
+
 import {
   ListItemIcon,
   ListItemText,
   Drawer,
   Divider,
   IconButton,
+  Typography,
 } from "@mui/material";
 
 import "./drawer.css";
-
-import { Typography } from "@mui/joy";
 
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
@@ -39,13 +38,13 @@ const DrawerMenu = ({ open, setOpen }: DrawerProps) => {
         <IconButton onClick={handleDrawerClose}>
           <CloseIcon />
         </IconButton>
-        <Typography level="body-sm" sx={{ my: 2, mx: 2 }}>
+        <Typography variant="body1" sx={{ my: 2, mx: 2 }}>
           Navigation
         </Typography>
       </div>
       <Divider />
 
-      {["About", "Projects", "Services", "Contact"].map((text, index) => (
+      {["About", "Projects", "Experience", "Contact"].map((text, index) => (
         <ListItem key={text} disablePadding>
           <ListItemButton>
             <ListItemIcon>

@@ -14,7 +14,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  @apply bg-white dark:bg-gray-950;
+  /* @apply bg-white dark:bg-gray-950; */
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
@@ -22,7 +22,7 @@ body {
 }
 
 main {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   /* padding: 20px; */
   height: 84vh;
   width: 100vw;

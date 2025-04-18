@@ -1,4 +1,4 @@
-import { Typography } from "@mui/joy";
+import { Typography } from "@mui/material";
 import { Link } from "react-router";
 
 import "./navBarTypography.css";
@@ -7,8 +7,8 @@ export const NavBarLink = ({ path, text }: { path: string; text: string }) => {
   return (
     <Link to={path}>
       <Typography
-        level="h4"
-        fontSize="lg"
+        variant="subtitle1"
+        color="primary.main"
         className="nav-bar-text"
         width="auto">
         {text}

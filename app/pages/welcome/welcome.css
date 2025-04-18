@@ -32,7 +32,6 @@
 
 .left-main-div-text {
   font-size: 2rem;
-  color: #333333; /* bg-gray-800 */
   text-align: center;
 }
 
@@ -49,7 +48,6 @@
 
 .padded-button {
   padding: 10px 20px;
-  background-color: #4b5563; /* bg-gray-800 */
   border-radius: 5px;
   border: none;
   cursor: pointer;

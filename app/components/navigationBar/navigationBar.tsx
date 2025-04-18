@@ -6,11 +6,10 @@ import "./navigationBar.css";
 import { useState } from "react";
 import IconButton from "@mui/material/IconButton";
 import DrawerMenu from "../drawer/drawer";
-import { Button, Toolbar } from "@mui/material";
+import { Button, Toolbar, Typography } from "@mui/material";
 import { Image } from "@mui/icons-material";
 
 import { Link } from "react-router";
-import { Typography } from "@mui/joy";
 
 const NavigationBar = () => {
   const [open, setOpen] = useState(false);
@@ -48,13 +47,11 @@ const NavigationBar = () => {
         </Link>
       </div>
 
-      <div id="navigation-row-links" className="nav-bar-container">
-        <div className="nav-bar-links">
-          <NavBarLink path="/about" text="About" />
-          <NavBarLink path="/projects" text="Projects" />
-          <NavBarLink path="/services" text="Services" />
-          <NavBarLink path="/contact" text="Contact" />
-        </div>
+      <div className="nav-links-container">
+        <NavBarLink path="/about" text="About" />
+        <NavBarLink path="/projects" text="Projects" />
+        <NavBarLink path="/experience" text="Experience" />
+        <NavBarLink path="/contact" text="Contact" />
       </div>
     </div>
   );
