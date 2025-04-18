@@ -4,13 +4,15 @@ import { ProjectInformation } from "~/content/projects/projectsInformation";
 
 import type { ProjectType } from "~/types/types";
 
+import "./projects.css";
+
 const ProjectsPage = () => {
   return (
     <div className="projects-page">
-      <Typography variant="h3" className="projects-page-title">
+      <Typography variant="h4" className="projects-page-title">
         Projects & Playground
       </Typography>
-      <Typography variant="body1" className="projects-page-subtitle">
+      <Typography variant="body2" className="projects-page-subtitle">
         Here’s a collection of client projects I’ve delivered — from Shopify
         migrations to frontend enhancements and UX improvements. While these
         showcase my work in freelance, my professional experience extends

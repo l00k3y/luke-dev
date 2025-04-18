@@ -1,5 +1,4 @@
 import { Button, Typography } from "@mui/material";
-import avatar from "./avatar.png";
 
 import "./welcome.css";
 
@@ -32,10 +31,6 @@ export const Welcome = () => {
             <Button className="padded-button">Contact Me</Button>
           </div>
         </div>
-
-        {/* <div className="right-main-div">
-          <img src={avatar} alt="Luke Chisnall's Avatar" className="avatar" />
-        </div> */}
       </div>
     </main>
   );
