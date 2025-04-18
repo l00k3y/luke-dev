@@ -5,6 +5,7 @@
 }
 
 .nav-bar-text {
+  width: auto;
   color: #333333;
   font-size: 1.25rem;
   font-weight: bold;

@@ -5,6 +5,11 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+@font-face {
+  font-family: "CodeRegular";
+  src: local("Code"), url("./fonts/Code.ttf") format("truetype");
+}
+
 html,
 body {
   height: 100%;

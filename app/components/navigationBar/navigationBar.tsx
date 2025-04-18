@@ -1,112 +1,63 @@
-import { Avatar, Divider, Drawer, List, Typography } from "@mui/joy";
 import NavBarLink from "~/components/typography/navBarLink";
 
 import MenuIcon from "@mui/icons-material/Menu";
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 
 import "./navigationBar.css";
 import { useState } from "react";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
 import IconButton from "@mui/material/IconButton";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
+import DrawerMenu from "../drawer/drawer";
+import { Button, Toolbar } from "@mui/material";
+import { Image } from "@mui/icons-material";
+
+import { Link } from "react-router";
+import { Typography } from "@mui/joy";
 
 const NavigationBar = () => {
   const [open, setOpen] = useState(false);
 
-  const handleDrawerOpen = () => {
-    setOpen(true);
-  };
-  const handleDrawerClose = () => {
-    setOpen(false);
+  const setDrawerOpen = (open: boolean) => {
+    setOpen(open);
   };
 
   return (
     <div className="nav-bar-container">
-      <IconButton
-        color="neutral"
-        aria-label="open drawer"
-        onClick={handleDrawerOpen}
-        edge="start"
-        sx={[
-          {
-            ml: 2,
-          },
-          open && { display: "none" },
-        ]}>
-        <MenuIcon />
-      </IconButton>
-
-      <Drawer id="nav-bar-drawer" open={open} onClose={handleDrawerClose}>
-        <Typography level="body-sm" sx={{ my: 2, mx: 2 }}>
-          Navigation
-        </Typography>
-
-        <IconButton onClick={handleDrawerClose}>
-          <ChevronLeftIcon />
+      <div id="left-nav-bar">
+        <IconButton
+          aria-label="open drawer"
+          onClick={() => setDrawerOpen(true)}
+          edge="start"
+          id="nav-bar-drawer-button"
+          sx={[
+            {
+              display: { xs: "block", sm: "none", md: "none", lg: "none" },
+              color: "primary.main",
+            },
+          ]}>
+          <MenuIcon />
         </IconButton>
-        <Divider />
-        {/* <List>
+
+        <DrawerMenu open={open} setOpen={setOpen} />
+
+        <Link id="nav-luke-home" to="/">
+          <Typography
+            fontFamily={"CodeRegular"}
+            noWrap
+            sx={{ color: "primary.main", width: "auto" }}>
+            Luke Chisnall
+          </Typography>
+        </Link>
+      </div>
+
+      <div id="navigation-row-links" className="nav-bar-container">
+        <div className="nav-bar-links">
           <NavBarLink path="/about" text="About" />
           <NavBarLink path="/projects" text="Projects" />
           <NavBarLink path="/services" text="Services" />
           <NavBarLink path="/contact" text="Contact" />
-        </List> */}
-        {/* <List> */}
-        {["About", "Projects", "Services", "Contact"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <MailIcon />
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </Drawer>
-      {/* // </List> */}
-      {/* <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List> */}
-      <div id="navigation-row-links" className="nav-bar-container">
-        <NavBarLink path="/about" text="About" />
-        <NavBarLink path="/projects" text="Projects" />
-        <NavBarLink path="/services" text="Services" />
-        <NavBarLink path="/contact" text="Contact" />
-      </div>
-
-      <div>
-        {" "}
-        {/* Added missing div to wrap Avatar and nav */}
-        <Avatar src="/favicon.png" alt="Logo" variant="outlined" size="lg">
-          LC
-        </Avatar>
+        </div>
       </div>
     </div>
   );
-
-  {
-    /* <nav className="flex space-x-10">
-        <NavBarLink path="/about" text="About" />
-        <NavBarLink path="/projects" text="Projects" />
-        <NavBarLink path="/services" text="Services" />
-        <NavBarLink path="/contact" text="Contact" />
-      </nav> */
-  }
-
-  // );
 };
 
 export default NavigationBar;

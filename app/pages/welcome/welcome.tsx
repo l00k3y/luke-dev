@@ -11,11 +11,7 @@ export const Welcome = () => {
           <div className="left-main-div-text">
             <Typography className="title-lg">Luke Chisnall</Typography>
 
-            <Typography level="h3">Software Engineer</Typography>
-            <Typography level="h4">Welcome to My Portfolio.</Typography>
-            <Typography level="body-md">
-              Explore my features and enjoy your stay!
-            </Typography>
+            <Typography level="h3">Full Stack Software Engineer</Typography>
           </div>
 
           <div className="call-to-action-row">
@@ -25,9 +21,9 @@ export const Welcome = () => {
           </div>
         </div>
 
-        <div className="right-main-div">
+        {/* <div className="right-main-div">
           <img src={avatar} alt="Luke Chisnall's Avatar" className="avatar" />
-        </div>
+        </div> */}
       </div>
     </main>
   );
