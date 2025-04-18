@@ -1,9 +1,5 @@
 import { Card, Chip, Divider, Typography } from "@mui/material";
-import type { ProjectType } from "~/pages/projects/projects";
-
-interface ProjectCardProps extends ProjectType {
-  key: number;
-}
+import type { ProjectCardProps } from "~/types/types";
 
 const ProjectCard = ({
   title,
