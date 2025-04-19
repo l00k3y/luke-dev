@@ -31,7 +31,7 @@
   font-size: 2rem;
   text-align: center;
   font-weight: bold;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .call-to-action-row {
@@ -45,10 +45,8 @@
   flex-wrap: wrap;
 
   @media screen and (max-width: 600px) {
-    height: 60%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    gap: 10px;
   }
 }
 
