@@ -4,15 +4,16 @@ import ContactPage from "~/pages/contact/contact";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Contact Me" },
+    { title: "Contact | Work With Luke Chisnall" },
     {
       name: "description",
       content:
-        "Learn more about Luke Chisnall, a Full Stack Software Engineer.",
+        "Interested in working together? Reach out to Luke Chisnall for freelance web development, frontend consulting, or technical collaborations.",
     },
     {
       name: "keywords",
-      content: "React, Router, JavaScript, Full Stack Developer, Contact",
+      content:
+        "React, Router, JavaScript, Full Stack Developer, Contact, Engineer",
     },
     {
       name: "author",

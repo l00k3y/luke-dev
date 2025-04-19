@@ -3,9 +3,13 @@ import ProjectsPage from "~/pages/projects/projects";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Luke C - Projects" },
-    { name: "description", content: "Welcome to the Projects Page!" },
-    { name: "keywords", content: "Projects, React, JavaScript" },
+    { title: "Web Development Projects | Luke Chisnall Portfolio" },
+    {
+      name: "description",
+      content:
+        "Explore freelance web development projects by Luke Chisnall. From Shopify migrations to frontend optimization and UX improvements — see real client work and results.",
+    },
+    { name: "keywords", content: "Projects, React, JavaScript, Engineer" },
     {
       name: "author",
       content: "Luke Chisnall",

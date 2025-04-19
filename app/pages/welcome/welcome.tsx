@@ -26,9 +26,15 @@ export const Welcome = () => {
           </div>
 
           <div className="call-to-action-row">
-            <Button className="padded-button">Download Resume</Button>
-            <Button className="padded-button">View Projects</Button>
-            <Button className="padded-button">Contact Me</Button>
+            <Button variant="outlined" className="padded-button">
+              Download Resume
+            </Button>
+            <Button variant="outlined" className="padded-button">
+              View Projects
+            </Button>
+            <Button variant="outlined" className="padded-button">
+              Contact Me
+            </Button>
           </div>
         </div>
       </div>
