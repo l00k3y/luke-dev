@@ -17,6 +17,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import CloseIcon from "@mui/icons-material/Close";
 import MailIcon from "@mui/icons-material/Mail";
 import ConnectWithoutContactIcon from "@mui/icons-material/ConnectWithoutContact";
+import { Link } from "react-router";
 
 interface DrawerProps {
   open: boolean;
@@ -44,18 +45,20 @@ const DrawerMenu = ({ open, setOpen }: DrawerProps) => {
       </div>
       <Divider />
 
-      {["About", "Projects", "Experience", "Contact"].map((text, index) => (
+      {["About", "Projects", "Experience", "Contact"].map((text) => (
         <ListItem key={text} disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              {text === "Contact" ? (
-                <ConnectWithoutContactIcon />
-              ) : (
-                <MailIcon />
-              )}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItemButton>
+          <Link to={`/${text.toLowerCase()}`} onClick={handleDrawerClose}>
+            <ListItemButton>
+              <ListItemIcon>
+                {text === "Contact" ? (
+                  <ConnectWithoutContactIcon />
+                ) : (
+                  <MailIcon />
+                )}
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItemButton>
+          </Link>
         </ListItem>
       ))}
 
