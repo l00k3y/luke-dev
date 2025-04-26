@@ -7,7 +7,7 @@ export const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
     <>
       <NavigationBar />
-      <div>{children}</div>
+      <div style={{ height: "82vh", width: "100vw" }}>{children}</div>
       <Footer />
     </>
   );

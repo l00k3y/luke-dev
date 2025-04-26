@@ -10,11 +10,9 @@ export const ProjectInformation: ProjectType[] = [
       "Frontend Development",
       "Accessibility",
       "UI/UX",
-      "Web Optimisation",
       "Booking System",
       "Ongoing Support",
       "Responsive Design",
-      "User Experience",
     ],
   },
   {

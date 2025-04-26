@@ -10,7 +10,7 @@ const ProjectsPage = () => {
   return (
     <div className="projects-page">
       <Typography variant="h4" className="projects-page-title">
-        Projects & Playground
+        Projects & Work
       </Typography>
       <Typography variant="body2" className="projects-page-subtitle">
         Here’s a collection of client projects I’ve delivered — from Shopify
