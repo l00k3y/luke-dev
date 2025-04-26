@@ -8,6 +8,8 @@ import {
   Divider,
   IconButton,
   Typography,
+  Box,
+  List,
 } from "@mui/material";
 
 import "./drawer.css";
@@ -39,28 +41,27 @@ const DrawerMenu = ({ open, setOpen }: DrawerProps) => {
         <IconButton onClick={handleDrawerClose}>
           <CloseIcon />
         </IconButton>
-        <Typography variant="body1" sx={{ my: 2, mx: 2 }}>
-          Navigation
-        </Typography>
       </div>
-      <Divider />
 
-      {["About", "Projects", "Experience", "Contact"].map((text) => (
-        <ListItem key={text} disablePadding>
-          <Link to={`/${text.toLowerCase()}`} onClick={handleDrawerClose}>
-            <ListItemButton>
-              <ListItemIcon>
-                {text === "Contact" ? (
-                  <ConnectWithoutContactIcon />
-                ) : (
-                  <MailIcon />
-                )}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </Link>
-        </ListItem>
-      ))}
+      <List sx={{ width: "100%", minWidth: 250, py: 0 }}>
+        {["About", "Projects", "Experience", "Contact"].map((text) => (
+          <ListItem
+            sx={{
+              py: 2,
+              mx: "auto",
+              width: "auto",
+              boxSizing: "border-box",
+            }}
+            key={text}>
+            <Link
+              style={{ textAlign: "center", width: "100%" }}
+              to={`/${text.toLowerCase()}`}
+              onClick={handleDrawerClose}>
+              {text}
+            </Link>
+          </ListItem>
+        ))}
+      </List>
 
       <div className="row-push-to-bottom">
         <IconButton onClick={loadLinkedIn}>

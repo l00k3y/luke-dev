@@ -1,21 +1,12 @@
 .main-div {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
-}
-
-.left-main-div {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-
-  align-items: center;
-  justify-content: center;
 }
 
 .title-lg {
@@ -28,10 +19,7 @@
 }
 
 .left-main-div-text {
-  font-size: 2rem;
   text-align: center;
-  font-weight: bold;
-  /* text-transform: uppercase; */
 }
 
 .call-to-action-row {

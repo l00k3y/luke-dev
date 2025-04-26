@@ -6,8 +6,7 @@ import "./navigationBar.css";
 import { useState } from "react";
 import IconButton from "@mui/material/IconButton";
 import DrawerMenu from "../drawer/drawer";
-import { Button, Toolbar, Typography } from "@mui/material";
-import { Image } from "@mui/icons-material";
+import { Typography } from "@mui/material";
 
 import { Link } from "react-router";
 
@@ -19,7 +18,7 @@ const NavigationBar = () => {
   };
 
   return (
-    <div className="nav-bar-container">
+    <header className="nav-bar-container">
       <div id="left-nav-bar">
         <IconButton
           aria-label="open drawer"
@@ -53,7 +52,7 @@ const NavigationBar = () => {
         <NavBarLink path="/experience" text="Experience" />
         <NavBarLink path="/contact" text="Contact" />
       </div>
-    </div>
+    </header>
   );
 };
 
