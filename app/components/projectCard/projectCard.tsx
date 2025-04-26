@@ -11,7 +11,7 @@ const ProjectCard = ({
   key,
 }: ProjectCardProps) => {
   return (
-    <Paper sx={{ my: 2, width: "80%", mx: "auto" }} elevation={3}>
+    <Paper sx={{ my: 2 }} className="project-card" elevation={3}>
       <Card sx={{ width: "100%", padding: 2 }} variant="outlined" key={key}>
         <Typography variant="h6">{title}</Typography>
 
@@ -19,17 +19,17 @@ const ProjectCard = ({
 
         <div className="row-3-columns">
           <div className="project-card-column-1">
-            {/* <Divider orientation="vertical" /> */}
             <Typography variant="body2">{dates}</Typography>
           </div>
 
+          <Divider />
           <div className="project-card-column-2">
-            <Typography variant="body1">{description}</Typography>
+            <Typography variant="body2">{description}</Typography>
           </div>
 
-          <div className="project-card-column-3">
+          {/* <div className="project-card-column-3">
             {/* <Image src="path/to/image.jpg" alt="Project Image"></Image> */}
-          </div>
+          {/* </div> */}
         </div>
 
         <div>
