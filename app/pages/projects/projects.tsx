@@ -9,10 +9,13 @@ import "./projects.css";
 const ProjectsPage = () => {
   return (
     <div className="projects-page">
-      <Typography variant="h4" className="projects-page-title">
+      <Typography variant="h4" className="projects-page-title" component={"h1"}>
         Projects & Work
       </Typography>
-      <Typography variant="body2" className="projects-page-subtitle">
+      <Typography
+        variant="body2"
+        className="projects-page-subtitle"
+        component="p">
         Here’s a collection of client projects I’ve delivered — from Shopify
         migrations to frontend enhancements and UX improvements. While these
         showcase my work in freelance, my professional experience extends

@@ -28,3 +28,15 @@
     width: 100%;
   }
 }
+
+.horizontal-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.project-tag :active {
+  background: blue;
+  /* color: var(--color-white); */
+}

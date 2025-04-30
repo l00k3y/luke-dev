@@ -4,24 +4,33 @@ import avatar from "./headshot.png";
 const AboutPage = () => {
   return (
     <main>
-      <div className="about-main-div">
-        <Typography className="title-lg">About Me</Typography>
+      <header>
+        <Typography component="h1" variant="h4" className="title-lg">
+          About Me
+        </Typography>
+      </header>
+      <section className="about-main-div">
         <img
           src={avatar}
-          alt="Luke Chisnall's Avatar"
+          alt="A headshot of Luke Chisnall"
           className="avatar"
-          // height={50}
           width={300}
         />
-        <Typography variant="h3">
+        <Typography component="h2" variant="h5">
           I build websites and do martial arts!
         </Typography>
-        {/* <img src={avatar} alt="Luke Chisnall" className="avatar" /> */}
-        <Button variant="outlined">Contact Me</Button>
-        <Typography variant="body1">
+        <Button
+          variant="outlined"
+          aria-label="Contact me via email"
+          onClick={() =>
+            (window.location.href = "mailto:lukebretherton11@gmail.com")
+          }>
+          Contact Me
+        </Button>
+        <Typography component="p" variant="body1">
           I specialize in building responsive and accessible web applications.
         </Typography>
-      </div>
+      </section>
     </main>
   );
 };
